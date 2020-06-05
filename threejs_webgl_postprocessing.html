@@ -10,7 +10,7 @@
 				overflow: hidden;
 			}
 		</style>
-    <link rel="stylesheet" type="text/css" href="../css/threecapui.css" />
+    <link rel="stylesheet" type="text/css" href="./css/threecapui.css" />
 	</head>
 	<body>
 
@@ -25,7 +25,7 @@
 		<script src="http://threejs.org/examples/js/postprocessing/MaskPass.js"></script>
 		<script src="http://threejs.org/examples/js/postprocessing/ShaderPass.js"></script>
 
-		<script src="../build/threecap.js"></script>
+		<script src="./build/threecap.js"></script>
 
 		<script>
 
@@ -88,7 +88,7 @@
         effect.renderToScreen = false;
 				composer.addPass( effect );
 
-        capture = new THREEcap({composer: composer, scriptbase: '../build/'});
+        capture = new THREEcap({composer: composer, scriptbase: './build/'});
         var captureui = new THREEcapUI(capture);
 
 				window.addEventListener( 'resize', onWindowResize, false );
